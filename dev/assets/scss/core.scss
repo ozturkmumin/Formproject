@@ -1,0 +1,137 @@
+// = IMPORT
+@import "css3-mixins";
+@import "../fonts/fonts";
+@import "./bootstrap/bootstrap";
+@import "reset";
+@import "variables.scss";
+
+//------------------------------------------------------------
+// = CUSTOM VARIABLES
+//------------------------------------------------------------
+
+html,
+body {
+     height: 100%;
+     font-family: "NotoSansSC-Regular", sans-serif;
+     font-size: 16px;
+     font-weight: normal;
+}
+
+//------------------------------------------------------------
+// = MAIN
+//------------------------------------------------------------
+
+.form-step {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 50%;
+}
+.form-items {
+     width: 30px;
+     border: 4px solid #dfe2e6;
+     border-radius: 50%;
+}
+.line {
+     border-bottom: 6px solid #dfe2e6;
+     width: 155px;
+}
+.button {
+     color: $white;
+     div {
+          border-radius: 10px;
+          max-width: 400px;
+     }
+}
+.js-border {
+     border-color: #ec5b70;
+}
+
+form {
+     width: 400px;
+     margin: 0 auto;
+     padding: 20px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px #ccc;
+}
+label {
+     font-weight: bold;
+     margin-bottom: 10px;
+     display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+     width: 100%;
+     padding: 12px 20px;
+     margin-bottom: 20px;
+     box-sizing: border-box;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+}
+button {
+     width: 100%;
+     background-color: #4caf50;
+     color: white;
+     padding: 14px 20px;
+     margin-bottom: 20px;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+}
+.form-2 {
+     display: none;
+     width: 400px;
+}
+.form-3 {
+     display: none;
+     width: 400px;
+}
+.form-modal {
+     display: none;
+     width: 400px;
+}
+
+.modal-content {
+     position: relative;
+     top: 50px;
+     background-color: #fefefe;
+     margin: auto;
+     padding: 0;
+     border: 1px solid #888;
+     width: 50%;
+     height: 75%;
+     max-height: 300px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 50px;
+}
+.close {
+     color: black;
+     font-size: 28px;
+     font-weight: bold;
+     cursor: pointer;
+     position: absolute;
+     top: 0;
+     left: 10px;
+}
+.cleanstorage {
+     color: black;
+     font-size: 16px;
+     font-weight: bold;
+     cursor: pointer;
+     padding: 10px;
+     max-width: 367px;
+}
+
+#myList {
+     li {
+          padding: 10px;
+          border: 1px solid #ccc;
+     }
+}

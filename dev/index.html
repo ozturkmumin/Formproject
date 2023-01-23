@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+          <link rel="stylesheet" href="assets/css/core.min.css" />
+          <link rel="shortcut icon" type="image/png" href="./assets/img/layout/favicon.ico" />
+          <title>GKFX Prime</title>
+          <meta name="description" content="" />
+     </head>
+     <body>
+          <ul id="myList" class="ms-5 mt-5">
+               <li>Name: <span id="name"></span></li>
+               <li>Surname: <span id="surname"></span></li>
+               <li>Phone: <span id="Phonedata"></span></li>
+               <li>Email: <span id="Emaildata"></span></li>
+               <li onclick="clearstorage()" class="text-center">
+                    <span id="close" class="cleanstorage">Clean</span>
+               </li>
+          </ul>
+          <div id="form-step" class="form-step">
+               <div id="form-items" class="form-items text-center js-border">1</div>
+               <div id="line1" class="line"></div>
+               <div id="form-items2" class="form-items text-center">2</div>
+               <div id="line2" class="line"></div>
+               <div id="form-items3" class="form-items text-center">3</div>
+               <div id="line3" class="line"></div>
+               <div id="form-items4" class="form-items text-center">4</div>
+          </div>
+          <form style="width: 400px" class="mb-4">
+               <label>Name:</label>
+               <input id="input1" type="text" name="name" placeholder="Enter your name" />
+               <br />
+               <label>Surname:</label>
+               <input id="input2" type="text" name="password" placeholder="Enter a surname" />
+               <br />
+               <button type="button" id="submitBtn" onclick="saveData()" disabled>Submit</button>
+          </form>
+          <form id="form-2" class="form-2 mb-4">
+               <label>Telefon:</label>
+               <input id="phone" type="text" name="name" placeholder="XXX-XXX-XXXX" />
+               <br />
+               <label>E-Mail:</label>
+               <input id="email" type="text" name="E-Mail" placeholder="example@domain.com" />
+               <br />
+               <button type="button" id="submitBtn2" onclick="saveData()" disabled>Submit</button>
+          </form>
+          <form id="form-3" class="form-2 mb-4">
+               <label>Yatırım Tutarı:</label>
+               <input id="money" type="text" name="name" placeholder="Yatırım Tutarı" />
+               <button type="button" id="submitBtn3" onclick="saveData()" disabled>Submit</button>
+          </form>
+          <div id="myModal" class="modal">
+               <div class="modal-content">
+                    <span id="close" class="close" onclick="closeModal()">&times;</span>
+                    <h2>Kaydınız başarılı bir şekilde tamamlandı</h2>
+               </div>
+          </div>
+
+          <script src="assets/js/core.min.js"></script>
+     </body>
+</html>
