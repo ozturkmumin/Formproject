@@ -133,5 +133,11 @@ button {
      li {
           padding: 10px;
           border: 1px solid #ccc;
+          @media screen and (min-width: $screenxs) {
+               min-width: 500px;
+          }
+          @media screen and (max-width: $screenxs) {
+               width: 75%;
+          }
      }
 }

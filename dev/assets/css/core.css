@@ -10416,3 +10416,11 @@ button {
 #myList li {
   padding: 10px;
   border: 1px solid #ccc; }
+  @media screen and (min-width: 575px) {
+    /* line 133, dev/assets/scss/core.scss */
+    #myList li {
+      min-width: 500px; } }
+  @media screen and (max-width: 575px) {
+    /* line 133, dev/assets/scss/core.scss */
+    #myList li {
+      width: 75%; } }
